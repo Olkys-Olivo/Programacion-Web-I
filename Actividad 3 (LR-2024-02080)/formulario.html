@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario HTML</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html"> ♥ Inicio ♥</a>
+            <a href="/formulario.html">♥ Formulario ♥</a>
+        </nav>
+    </header>
+    <main>
+        <p>
+            <i>Complete el siguiente formulario para agregar una serie, película o anime a la base de datos:</i>
+        </p>
+    <section>
+        <form action="https://httpbin.org/post" method="post">
+            <br>
+                    <!-- Password -->
+            <input type="password" placeholder="Ingresa tu contraseña" name="contraseña"/>
+                    <!-- Text y Number -->
+            <input type="text" placeholder="Ingresa el Titulo" name="titulo"/>
+            <input type="number" placeholder="Año de estreno" name="estreno"/>
+            <input type="number" placeholder="Año de finalizacion" name="finalizacion"/>
+            </br>
+            <br>
+                    <!-- Select -->
+            <p><i>Selecciona el Formato:</i></p>
+            <select name="Formatos">
+                <option value="Pelicula">Pelicula</option>
+                <option value="Serie">Serie</option>
+                <option value="Anime">Anime</option>
+                <option value="Telenovela">Telenovela</option>
+                <option value="Documental">Documental</option>
+                <option value="Video">Video</option>
+                <option value="Otro">Otro</option>
+            </select>
+            </br>
+            <br>
+                    <!-- Checkbox y Radio -->
+            <p><i>Selecciona la Clasificacion:</i></p>
+            <input type="radio" name="Clasificacion" value="RP"/> RP (Calificacion Pendiente)
+            <input type="radio" name="Clasificacion" value="E"/> E (Apta para todo público)
+            <input type="radio" name="Clasificacion" value="E10+"/> E10+ (Apta para mayores de 10 años)
+            <input type="radio" name="Clasificacion" value="T"/> T (Adolescente)
+            <input type="radio" name="Clasificacion" value="M"/> M (Mature, para mayores de 17 años)
+            <input type="radio" name="Clasificacion" value="AO"/> AO (Adultos unicamente)
+            </br>
+            <br>
+            <p><i>Selecciona el Genero:</i></p>
+            <input type="checkbox" name="Genero" value="accion"/> Accion
+            <input type="checkbox" name="Genero" value="aventura"/> Aventura
+            <input type="checkbox" name="Genero" value="comedia"/> Comedia
+            <input type="checkbox" name="Genero" value="drama"/> Drama
+            <input type="checkbox" name="Genero" value="ciencia ficcion"/> Ciencia Ficcion
+            <input type="checkbox" name="Genero" value="fantasia"/> Fantasia
+            <input type="checkbox" name="Genero" value="musical"/> Musical
+            <input type="checkbox" name="Genero" value="romance"/> Romance
+            <input type="checkbox" name="Genero" value="terror"/> Terror
+            <input type="checkbox" name="Genero" value="suspenso"/> Suspenso
+            <input type="checkbox" name="Genero" value="otro"/> Otro
+            </br>
+            <br>
+            <p><i> Seleccione la Demografia:</i></p>
+            <input type="radio" name="Demografia" value="shonen"/> Shonen
+            <input type="radio" name="Demografia" value="shojo"/> Shojo
+            <input type="radio" name="Demografia" value="seinen"/> Seinen
+            <input type="radio" name="Demografia" value="josei"/> Josei
+            <input type="radio" name="Demografia" value="kodomomuke"/> Kodomomuke
+            </br>
+            <br>
+                    <!-- Select y Textarea -->
+            <p><i>Calificacion:</i></p>
+            <select name="Calificacion">
+            <option value="excelente"/> ★★★★★ (Excelente)
+            <option value="buena"/> ★★★★ (Buena)
+            <option value="regular"/> ★★★ (Regular)
+            <option value="mala"/> ★★ (Mala)
+            <option value="pesima"/> ★ (Terrible)
+            </select>
+            </br>
+            <br>
+            <textarea name="comentario" placeholder="Comentario"></textarea>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+            </br>
+        </form>
+    </section>
+        <p>
+            ¡Gracias por visitar mi página!
+        </p>
+    </main>
+    <footer>
+        <p>&copy; 2026 Formulario HTML. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
