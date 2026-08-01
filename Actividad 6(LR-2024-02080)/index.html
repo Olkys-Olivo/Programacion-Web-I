@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Collector</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="main__titulo">Recolecctor de Anime</h1>
+
+      <section>
+        <form class="form">
+          <fieldset>
+            <input type="text" placeholder="Ingresa el Titulo" name="titulo" required/>
+            <input type="number" placeholder="Año de estreno" name="estreno"/>
+            <input type="number" placeholder="Año de finalizacion" name="finalizacion"/>
+          </fieldset>
+
+          <fieldset>
+            <p>Selecciona la Clasificación:</p>
+            <select name="clasificacion">
+              <option value="RP">RP (Calificacion Pendiente)</option>
+              <option value="E">E (Apta para todo público)</option>
+              <option value="E10+">E10+ (Apta para mayores de 10 años)</option>
+              <option value="T">T (Adolescente)</option>
+              <option value="M">M (Mature, para mayores de 17 años)</option>
+              <option value="AO">AO (Adultos unicamente)</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <p>Selecciona el Género:</p>
+            <label><input type="checkbox" name="genero" value="accion"/> Accion</label>
+            <label><input type="checkbox" name="genero" value="aventura"/> Aventura</label>
+            <label><input type="checkbox" name="genero" value="comedia"/> Comedia</label>
+            <label><input type="checkbox" name="genero" value="drama"/> Drama</label>
+            <label><input type="checkbox" name="genero" value="ciencia ficcion"/> Ciencia Ficcion</label>
+            <label><input type="checkbox" name="genero" value="fantasia"/> Fantasia</label>
+            <label><input type="checkbox" name="genero" value="musical"/> Musical</label>
+            <label><input type="checkbox" name="genero" value="romance"/> Romance</label>
+            <label><input type="checkbox" name="genero" value="terror"/> Terror</label>
+            <label><input type="checkbox" name="genero" value="suspenso"/> Suspenso</label>
+            <label><input type="checkbox" name="genero" value="otro"/> Otro</label>
+          </fieldset>
+
+          <fieldset>
+            <p>Seleccione la Demografía:</p>
+            <label><input type="radio" name="demografia" value="Shonen" checked/> Shonen (Chicos Adolescentes)</label>
+            <label><input type="radio" name="demografia" value="Shojo"/> Shojo (Chicas Adolescentes)</label>
+            <label><input type="radio" name="demografia" value="Seinen"/> Seinen (Jóvenes Adultos)</label>
+            <label><input type="radio" name="demografia" value="Josei"/> Josei (Mujeres Adultas)</label>
+            <label><input type="radio" name="demografia" value="kodomomuke"/> Kodomomuke (Niños)</label>
+          </fieldset>
+
+          <fieldset>
+            <p>Selecciona el Formato:</p>
+            <select name="formatos">
+                <option value="Pelicula">Pelicula</option>
+                <option value="Serie">Serie</option>
+                <option value="Anime">Anime</option>
+                <option value="Otro">Otro</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <p>Calificación:</p>
+            <select name="calificacion">
+              <option value="5">★★★★★ </option>
+              <option value="4">★★★★ </option>
+              <option value="3">★★★ </option>
+              <option value="2">★★ </option>
+              <option value="1">★ </option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <p>Comentario:</p>
+            <textarea name="comentario" placeholder="Comentario"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="output">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Titulo</th>
+              <th>Estreno</th>
+              <th>Finalización</th>
+              <th>Clasificación</th>
+              <th>Género</th>
+              <th>Demografía</th>
+              <th>Formato</th>
+              <th>Calificación</th>
+              <th>Comentario</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
